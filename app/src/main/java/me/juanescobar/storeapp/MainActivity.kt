@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import me.juanescobar.storeapp.ui.theme.HomeScreen
 import me.juanescobar.storeapp.ui.theme.LoginScreen
 import me.juanescobar.storeapp.ui.theme.RegisterScreen
 import me.juanescobar.storeapp.ui.theme.StoreAppTheme
@@ -36,7 +37,11 @@ class MainActivity : ComponentActivity() {
                     }
 
                     composable("register"){
-                        RegisterScreen()
+                        RegisterScreen(myNavController)
+                    }
+
+                    composable("home"){
+                        HomeScreen(myNavController)
                     }
                 }
             }

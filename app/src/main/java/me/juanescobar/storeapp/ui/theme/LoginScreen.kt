@@ -85,7 +85,7 @@ fun LoginScreen(navController: NavController) {
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            Button(onClick = {}, modifier = Modifier.fillMaxWidth().height(50.dp), shape = RoundedCornerShape(12.dp), colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF9900))) {
+            Button(onClick = { navController.navigate("home")}, modifier = Modifier.fillMaxWidth().height(50.dp), shape = RoundedCornerShape(12.dp), colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF9900))) {
                 Text(text = "Iniciar Sesión")
             }
 
