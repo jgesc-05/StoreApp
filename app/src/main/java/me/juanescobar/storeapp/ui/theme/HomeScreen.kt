@@ -91,7 +91,10 @@ fun HomeScreen(myNavController: NavController) {
                 "https://www.skynetcorp.pe/blog/wp-content/uploads/Comunicacion-de-marketing.jpg"
             )
 
-            LazyRow(horizontalArrangement = Arrangement.spacedBy(16.dp), contentPadding = PaddingValues(start = 16.dp, end = 16.dp)) {
+            LazyRow(
+                horizontalArrangement = Arrangement.spacedBy(16.dp),
+                contentPadding = PaddingValues(start = 16.dp, end = 16.dp)
+            ) {
                 item { promoCard(url_imagenes[0]) }
                 item { promoCard(url_imagenes[1]) }
                 item { promoCard(url_imagenes[2]) }

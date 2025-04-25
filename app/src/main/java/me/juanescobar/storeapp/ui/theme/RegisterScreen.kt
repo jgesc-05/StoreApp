@@ -39,7 +39,18 @@ import androidx.navigation.NavController
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun RegisterScreen(myNavController: NavController) {
-    Scaffold (topBar = { TopAppBar(title = {}, navigationIcon = { IconButton(onClick = {myNavController.popBackStack()}){Icon(Icons.Default.ArrowBack, contentDescription = null)} }) }) { innerPadding ->
+    Scaffold(topBar = {
+        TopAppBar(
+            title = {},
+            navigationIcon = {
+                IconButton(onClick = { myNavController.popBackStack() }) {
+                    Icon(
+                        Icons.Default.ArrowBack,
+                        contentDescription = null
+                    )
+                }
+            })
+    }) { innerPadding ->
         Column(
             modifier = Modifier
                 .padding(innerPadding)
@@ -110,7 +121,7 @@ fun RegisterScreen(myNavController: NavController) {
             Spacer(modifier = Modifier.height(24.dp))
 
             Button(
-                onClick = {myNavController.navigate("login")},
+                onClick = { myNavController.navigate("login") },
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(50.dp),
