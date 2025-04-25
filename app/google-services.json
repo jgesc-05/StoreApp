@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "17702189689",
+    "project_id": "storeapp-c1e18",
+    "storage_bucket": "storeapp-c1e18.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17702189689:android:dd37bd87633b2a5119b2a8",
+        "android_client_info": {
+          "package_name": "me.juanescobar.storeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHUd2PAJvq8pZV9IZtwLGK1cAEz0GeYi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
